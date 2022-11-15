@@ -27,7 +27,7 @@ export class AppComponent {
         distinctUntilChanged()
       )
       .subscribe((route) => {
-        newrelic.finished();
+        // TODO tracing
       });
     router.events
       .pipe(
@@ -39,13 +39,12 @@ export class AppComponent {
           ?.firstChild?.data;
 
         const { pageViewName } = routeData;
-        pageViewName && newrelic.setPageViewName(pageViewName);
+        // TODO page impression
       });
     heroService.getRandomHero().subscribe((hero) => {
       const currentHero = hero;
-      if(currentHero){
-        newrelic.setCustomAttribute("user", currentHero.name);
-        newrelic.setCustomAttribute("userId", currentHero.id);
+      if (currentHero) {
+        // TODO user tracking
       }
     });
   }

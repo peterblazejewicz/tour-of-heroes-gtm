@@ -33,7 +33,7 @@ a {
   text-align: center;
   width: 100%;
   min-width: 70px;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   box-sizing: border-box;
 
   /* flexbox */
@@ -52,7 +52,6 @@ a {
 a:hover {
   background-color: black;
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

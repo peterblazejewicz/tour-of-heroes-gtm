@@ -13,12 +13,11 @@ nav a {
 }
 nav a:hover {
   color: white;
-  background-color: #42545C;
+  background-color: #42545c;
 }
 nav a.active {
   background-color: black;
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

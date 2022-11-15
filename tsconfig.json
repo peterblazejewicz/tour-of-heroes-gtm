@@ -18,17 +18,7 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "typeRoots": [
-      "./node_modules/@types",
-      "./@types"
-    ],
-    "types": [
-      "new-relic-browser"
-    ],
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
